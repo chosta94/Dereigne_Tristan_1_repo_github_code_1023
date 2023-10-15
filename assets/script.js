@@ -31,6 +31,8 @@ let index = 0;
 function changeImage(index) {
 	picture.src = './assets/images/slideshow/' + slides[index].image;
 	tagLine.innerHTML = slides[index].tagLine;
+	// Affichage dans la console de la slide changée pour vérification
+	console.log(`Slide changée : ${index+1} | Image : ${slides[index].image} | Légende : ${slides[index].tagLine}`);
   }
 
 //Met à jour l'indicateur dot actif en fonction de l'index.
